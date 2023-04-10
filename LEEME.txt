@@ -1,0 +1,17 @@
+PASOS: 
+
+Paso 1.- Instalación de herramientas : 
+- tener navegador web instalado ( Mozilla Firefox primordialmente)
+- tener editor de codigo instalado : Visual Studio Code
+- instalar extensión en visual studio code : PHP server
+- tener servidor web instalado y todo lo que conlleva : XAMPP ( no es necesario poner el proyecto en httdocs, con tal de que los puertos coincidan, esta bien) -- paso 2 ***
+- tener gestor de base de datos instalado : MySQL Workbench
+
+** Paso 2.- Las rutas (puertos) de XAMPP con MySQL Workbench deben coincidir. *** 
+
+Paso 3.- Ejecutar SCRIPT en MySQL Workbench (adjuntado en la carpeta SQL)
+
+Paso 4.- Abrir el form.php con PHP server ( extensión instalada en visual), completar formulario y a la vez  revisar validaciones en inspeccionar página.
+
+
+

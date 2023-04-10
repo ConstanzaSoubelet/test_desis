@@ -1,0 +1,35 @@
+
+create database db_soubelet;
+use db_soubelet;
+
+drop table db_soubelet.usuario;
+drop table db_soubelet.region;
+
+create table db_soubelet.usuario(  
+id INT not null auto_increment,
+rut VARCHAR(12) NOT NULL,
+nombre VARCHAR (20) NOT NULL,
+alias VARCHAR (20) NOT NULL,
+email VARCHAR (50) NOT NULL,
+candidato VARCHAR (40) NOT NULL,
+seleccion VARCHAR (40) NOT NULL,
+primary key (id),
+unique (rut)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+create table  db_soubelet.region (id int auto_increment,
+						id_region int,
+                        comuna varchar(50),
+						primary key(id));
+                        
+INSERT into db_soubelet.region values (null,1,'Alto Hospicio'),(null,1,'Iquique'),
+							(null,1,'Colchane'),(null,1,'Pica'),
+							(null,1,'Pozo Almonte'),
+                            (null,3,'Arauco'),(null,3,'Concepcion'),
+                            (null,3,'Coronel'),(null,3,'Curanilahue'),
+                            (null,3,'San Pedro de la Paz');
+                            
+
+select * from db_soubelet.usuario;
+
+delete from usuario where id=1;
